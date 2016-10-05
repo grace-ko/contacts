@@ -1,0 +1,87 @@
+input, label {
+display: block;
+margin-bottom: 2px;
+
+}
+input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: solid 1px gray;
+}
+.formTitle {
+	font-size: 24px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+
+body{
+	background-image: url('background.png');
+	font-family: Rubik;
+}
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: white;
+	border: solid black 1px;
+	color: #4b4b4b;
+	text-align: center;
+	font-family: 'Satisfy', cursive;
+	z-index:1;
+}
+h1 {
+	margin-left: 20px;
+}
+.container {
+	position: relative;
+	top: 120px;
+	margin:auto;
+	background-color:#dbdbdb;
+	width: 50%;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+form {
+	
+	display: inline-block;
+	margin-left: 20px;
+
+}
+
+.rightContainer {
+	display: inline-block;
+	width: 40%;
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 9px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+   	border-radius: 10px;
+   	margin-bottom: 20px;
+
+}
+
+ul {
+    list-style-image: url('sqpurple.gif');
+}
+button:hover{
+	background-color:#d4adb7;
+	transition: 0.5s;
+}
+li:hover {
+	font-size: 18px;
+	font-weight: bold;
+}
