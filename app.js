@@ -49,6 +49,7 @@ $(document).ready(function(){
 	        	+' '+contactList[pullList].firstname+'<br>'+'Last Name:'+' '+
 	        	contactList[pullList].lastname+'<br>'+"Phone Number:"+' '+
 	        	contactList[pullList].phonenumber+'<br>'+'Street:'+' '+
+                contactList[pullList].city+'<br>'+'City:'+' '+
 	        	contactList[pullList].street+'<br>'+'State:'+' '+
 	        	contactList[pullList].state+'<br><br>');
 
