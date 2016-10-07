@@ -1,64 +1,73 @@
 input, label {
-display: block;
-margin-bottom: 2px;
+	display: block;
+	margin-bottom: 2px;
 
 }
 input {
-	padding: 10px;
-	width: 200px;
-	border-radius: 5px;
-	margin-bottom: 10px;
-	border: solid 1px gray;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: solid 1px gray;
 }
 .formTitle {
-	font-size: 24px;
-	margin-bottom: 20px;
-	margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 
 }
-
+.fullList{
+	border:1px solid #999999;
+	background-color: white;
+	margin-top: 10px;
+	position:fixed;
+	right: 50px;
+	top: 100px;
+	text-align:left;
+	width:300px;
+	padding: 25px 25px 20px;
+}
 
 body{
-	background-image: url('background.png');
-	font-family: Rubik;
+    background-image: url('background.png');
+    font-family: Rubik;
 }
 header {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	background-color: white;
-	border: solid black 1px;
-	color: #4b4b4b;
-	text-align: center;
-	font-family: 'Satisfy', cursive;
-	z-index:1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    border: solid black 1px;
+    color: #4b4b4b;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    z-index:1;
 }
 h1 {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 .container {
-	position: relative;
-	top: 120px;
-	margin:auto;
-	background-color:#dbdbdb;
-	width: 50%;
-	border-radius: 10px;
-	margin-bottom: 50px;
+    position: relative;
+    top: 120px;
+    margin:auto;
+    background-color:#dbdbdb;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    
 }
 form {
-	
-	display: inline-block;
-	margin-left: 20px;
+    
+    display: inline-block;
+    margin-left: 20px;
 
 }
 
 .rightContainer {
-	display: inline-block;
-	width: 40%;
-	position: absolute;
-	top:0px;
-	right:0px;
+    display: inline-block;
+    margin: auto;
+
 }
 button {
     background-color: gray;
@@ -69,8 +78,8 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-   	border-radius: 10px;
-   	margin-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 
 }
 
@@ -78,10 +87,14 @@ ul {
     list-style-image: url('sqpurple.gif');
 }
 button:hover{
-	background-color:#d4adb7;
-	transition: 0.5s;
+    background-color:#d4adb7;
+    transition: 0.5s;
 }
 li:hover {
-	font-size: 18px;
-	font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
+}
+p{
+	font-size: 10px;
+	margin-top: -15px;
 }

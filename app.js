@@ -11,6 +11,7 @@ $(document).ready(function(){
     $('.contact').submit(function(event){
         event.preventDefault();
         $('.result').show();
+    
         
         var individual={
             firstname:($("input[name='firstname']").val()),
@@ -31,38 +32,35 @@ $(document).ready(function(){
         
 
         $('.resultList').append('<li>'+contactList[numberOfContacts].firstname+" "+
-        	contactList[numberOfContacts].lastname+'</li>');
+            contactList[numberOfContacts].lastname+'</li>');
         $("li:last").attr('id',numberOfContacts);
         numberOfContacts++;    
         $('.resetList').show();
         $('.resetList').click(function(){
             location.reload();
         });
+        $('form')[0].reset();
         
         $('li').click(function(){
         
-	        $('.fullList').show();
-	        $('.reset').show();
-	        var pullList=$(this).attr('id');
+            $('.fullList').show();
+            $('.reset').show();
+            var pullList=$(this).attr('id');
 
-	        $('.fullList').html('<h3>'+'Contact Detail'+'</h3>'+'First Name:'
-	        	+' '+contactList[pullList].firstname+'<br>'+'Last Name:'+' '+
-	        	contactList[pullList].lastname+'<br>'+"Phone Number:"+' '+
-	        	contactList[pullList].phonenumber+'<br>'+'Street:'+' '+
+            $('.fullList').html('<h3>'+'Contact Detail'+'</h3>'+'<p>'+'(Click box to remove)'+
+            '</p>'+'First Name:'
+                +' '+contactList[pullList].firstname+'<br>'+'Last Name:'+' '+
+                contactList[pullList].lastname+'<br>'+"Phone Number:"+' '+
+                contactList[pullList].phonenumber+'<br>'+'Street:'+' '+
                 contactList[pullList].city+'<br>'+'City:'+' '+
-	        	contactList[pullList].street+'<br>'+'State:'+' '+
-	        	contactList[pullList].state+'<br><br>');
+                contactList[pullList].street+'<br>'+'State:'+' '+
+                contactList[pullList].state+'<br><br>');
 
         });
-            $('.reset').click(function(){
-                $(this).hide();
-                $('.fullList').hide();
-
-            });
+        $('.fullList').click(function(){
+            $('.fullList').hide();
+        });
 
     });
 
-
 });
-
-

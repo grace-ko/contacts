@@ -9,47 +9,41 @@
 <body>
 
  
-        <header>
-            <h1>Address Book</h1>
-        </header>
+    <header>
+        <h1>Address Book</h1>
+    </header>
     <div class="container">
         <form class="contact">
-            	<div class="formTitle">Add a Contact:</div>
+            <div class="formTitle">Add a Contact:</div>
 
-    	        <label for='firstName'>First Name</label>
-    	        <input type='text' name='firstname' placeholder="John" />
-    	        <label for='lastName'>Last Name</label>
-    	        <input type='text' name='lastname' placeholder="Doe" />
-    	        <label for='phoneNumber'>Phone Number</label>
-    	        <input type='text' name='phonenumber' placeholder="John" />
-    	        <label for='street'>Street</label>
-    	        <input type='text' name='street' placeholder="123 Walls St" />
-    	        <label for='city'>City</label>
-    	        <input type='text' name='city' placeholder="San Francisco" />
-    	        <label for='state'>State</label>
-    	        <input type='text' name='state' placeholder="CA" />
+            <label for='firstName'>First Name</label>
+            <input type='text' name='firstname' placeholder="John" />
+            <label for='lastName'>Last Name</label>
+            <input type='text' name='lastname' placeholder="Doe" />
+            <label for='phoneNumber'>Phone Number</label>
+            <input type='text' name='phonenumber' placeholder="John" />
+            <label for='street'>Street</label>
+            <input type='text' name='street' placeholder="123 Walls St" />
+            <label for='city'>City</label>
+            <input type='text' name='city' placeholder="San Francisco" />
+            <label for='state'>State</label>
+            <input type='text' name='state' placeholder="CA" />
 
-    	        <button>Add</button>
+            <button>Add</button>
 
 
         </form>
        
         <div class="rightContainer">
             <div class="result">
-                <h3>Contacts <span>(Click Name for Detail)</h3>
-                <ul class="resultList">
-                </ul>
-
+                <h3>Contacts</h3> 
+                <p>(Click Name for Detail)</p>
+                <ul class="resultList"></ul>
             </div>
             <button class="resetList">Reset List</button>
-            <div class="fullList">
-                <h3>Contact Detail</h3>
-
-            </div>
-            <button class="reset">Reset Detail</button>
-
         </div>
     </div>
+    <div class="fullList"></div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="app.js"></script>
