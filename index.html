@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Address Book</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
@@ -7,15 +8,12 @@
 </head>
 
 <body>
-
- 
     <header>
         <h1>Address Book</h1>
     </header>
     <div class="container">
         <form class="contact">
             <div class="formTitle">Add a Contact:</div>
-
             <label for='firstName'>First Name</label>
             <input type='text' name='firstname' placeholder="John" />
             <label for='lastName'>Last Name</label>
@@ -28,26 +26,18 @@
             <input type='text' name='city' placeholder="San Francisco" />
             <label for='state'>State</label>
             <input type='text' name='state' placeholder="CA" />
-
             <button>Add</button>
-
-
         </form>
-       
         <div class="rightContainer">
-            <div class="result">
-                <h3>Contacts</h3> 
-                <p>(Click Name for Detail)</p>
-                <ul class="resultList"></ul>
-            </div>
+            <h3>Contacts List</h3>
             <button class="resetList">Reset List</button>
+            <p>(Click Name for Detail)</p>
+            <ul class="resultList"></ul>
         </div>
     </div>
-    <div class="fullList"></div>
-
+    <div class="expandList"></div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="app.js"></script>
-
-
 </body>
+
 </html>
